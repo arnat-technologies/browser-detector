@@ -1,0 +1,38 @@
+{
+  "name": "@arnat/browser-detector",
+  "version": "0.0.1",
+  "main": "./build/esm/index.js",
+  "module": "./build/cjs/index.js",
+  "exports": {
+    ".": "./build/esm/index.js",
+    "./*": "./build/esm/*.js"
+  },
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@types/jest": "29.5.0",
+    "@types/node": "18.15.11"
+  },
+  "devDependencies": {
+    "@rnat/eslint-config": "*"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "build",
+    "LICENSE",
+    "README.md"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "sideEffects": false,
+  "private": false
+}
